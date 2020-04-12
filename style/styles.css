@@ -1,0 +1,63 @@
+.home {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "title title title title title" "new-task task task task task";
+  padding: 50px;
+  font-size: 18px;
+  font-family: fantasy;
+}
+
+.title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: title;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.new-task {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: new-task;
+  width: 320px;
+  border: solid 1px #dddddd;
+  padding: 20px;
+  max-height: 300px;
+}
+
+.new-task input:nth-child(2) {
+  width: 93%;
+  margin-bottom: 10px;
+  padding: 1px;
+}
+
+.new-task input:nth-child(3) {
+  width: 80%;
+  margin-right: 10px;
+  padding: 1px;
+}
+
+.new-list-container {
+  display: block;
+  overflow-y: auto;
+  max-height: 100px;
+}
+
+.task-container {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: task;
+}
+
+.task-list-container {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list-container .task-list-item {
+  padding: 10px;
+  border-bottom: solid 1.5px #dddddd;
+}
+/*# sourceMappingURL=styles.css.map */

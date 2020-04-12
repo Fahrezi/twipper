@@ -1,0 +1,15 @@
+.card {
+  min-height: 100px;
+  padding: 15px;
+  display: flex;
+  border: solid 1px #eee;
+  margin-bottom: 10px;
+
+  .card-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333eee;
+    margin-right: 15px;
+  }
+}
